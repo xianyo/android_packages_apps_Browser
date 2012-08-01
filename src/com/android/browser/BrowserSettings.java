@@ -312,6 +312,7 @@ public class BrowserSettings implements OnSharedPreferenceChangeListener,
         settings.setDatabaseEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setWorkersEnabled(true);  // This only affects V8.
+        settings.setAllowFileAccess(false);
 
         // HTML5 configuration parametersettings.
         settings.setAppCacheMaxSize(getWebStorageSizeManager().getAppCacheMaxSize());
